@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    background-image: linear-gradient(to right, #e8f7e4, #aff4f7);
+}
+
+nav {
+    border-bottom: 2px solid #457b9d;
+    box-shadow: 1px 2px 2px rgb(28, 110, 99);
+    padding: 10px;
+    background-color: #457b9d;
+    font-size: 2rem;
+    /* width: 100%; */
+
+    position: sticky;
+
+}
+
+.nav .navi {
+    list-style-type: none;
+    order: 5;
+    color: white;
+    margin-top: 4px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 0.2rem;
+}
+
+
+.home {
+
+    font-size: 2.5rem;
+    font-family: 'Acme', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.main_head {
+    margin-top: 50px;
+    text-align: center;
+    color: #174a69;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(216, 211, 211, 0.1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+    font-size: 4rem;
+    font-family: 'Frijole', cursive;
+}
+
+#cityInput {
+    width: 50%;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    box-shadow: 3px 5px 6px #0d5c5c;
+    /* input-outline: none; */
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border: 10px ridge #1d3557;
+    background: linear-gradient(to right top, #e3eb76, rgb(222, 243, 237), #1297cc);
+    letter-spacing: 5px;
+    border: 2px solid #264653;
+}
+
+input:hover {
+    cursor: pointer
+}
+
+input:focus {
+
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.yourSearch {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    margin-top: 5%;
+
+}
+
+.yourSearch .card {
+    width: 250px;
+    height: 300px;
+    margin-top: 2%;
+    background: white;
+    transform: translateY(-10px);
+    box-shadow: 2px 2px #040914, 2px 2px #08283d, 2px 2px #31d7dd, 2px 2px #0a4438, 2px 2px #85ced3, 2px 2px #225e7a, 2px 2px #2ec3d6, 2px 2px #bc00dd, 2px 2px #34d2ee, 2px 2px #bcd6d0, 4px 2px #085a48, 4px 2px 2px #1b93b1;
+    color: black;
+    text-align: center;
+}
+
+.card .head {
+    font-size: 2rem;
+    margin-top: 10px;
+
+}
+
+.card .date {
+    font-style: italic;
+}
+
+.card .temp {
+    font-size: 40px;
+
+}
+
+.card .weather {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.card .weatherDesc {
+    font-style: italic;
+    font-weight: 2px;
+}
+
+.searchAlert h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    margin-left: 40%;
+
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    height: 30px;
+    border-radius: 10%;
+    padding: 30px;
+    width: 610px;
+    background-color: rgb(184, 211, 216);
+}
+
+.searchAlert h2 button {
+    font-size: 20px;
+    margin-left: 1%;
+
+    background-color: black;
+    color: white;
+    width: 30px;
+}
+
+.searchAlert h2 button:hover {
+    cursor: pointer;
+}
+
+.searchAlert h2 button:focus {
+    outline: none;
+}

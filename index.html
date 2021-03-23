@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Know Today's weather across the world'</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script rel="script" src="weather.js"></script>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<header>
+    <nav class="nav">
+        <ul class="navi">
+            <li class="home">
+                <a href="#">Home</a>
+            </li>
+
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<body style="color:black;">
+
+    <h1 class="main_head">WEATHER-APP </h1>
+    <input type="text" placeholder="Enter City" id="cityInput" onkeypress="fetchData(event)" class="in">
+    <br>
+    <div id="alert"></div>
+    <div class="yourSearch" id="main"></div>
+</body>
+
+</html>
