@@ -39,34 +39,20 @@ function data(query) {
         })
         .then((weatherdata) => {
 
-            //  console.log(weatherdata.name);
-            //  console.log(weatherdata.sys.country);
-            //  console.log(new Date().toDateString());
-            //
-            //  console.log(Math.floor(temp)+"°c");
-            //  console.log(weatherdata.weather[0].main);
-            //  console.log(weatherdata.weather[0].description);
             let temp = weatherdata.main.temp - 273.15;
             const date = new Date().toDateString();
             const tempInCel = Math.floor(temp);
             /**********HTML Data *************/
             let mainBlock = document.getElementById('main');
 
-            //  let cardBlock=document.createElement('DIV');
-            //  cardBlock.setAttribute('class','card');
-            //  let cardBlockUl=document.createElement('UL');
-            //   cardBlockUl.setAttribute('class','cardUl');
             let cardBlockDiv = document.createElement('div');
             cardBlockDiv.innerHTML = "<div><br><br><span class='head'>" + weatherdata.name + ", " + weatherdata.sys.country + "</span><br><span class='date'>" + date + "</span><br><br><span class='temp'>" + tempInCel + "&#176;C</span><br><span class='weather'><br>" + weatherdata.weather[0].main + "</span><span class='weatherDesc'>" + " <br><br><hr></div>";
             cardBlockDiv.setAttribute('class', 'card');
             mainBlock.append(cardBlockDiv);
+        
             /**************card end here************/
             /************local storage work*********/
-            /* apidata.search.cityCard[apidata.i]=cardBlockDiv.innerHTML;
-     localStorage.setItem('searchCity',apidata.search.cityCard);
-   var local=localStorage.getItem('searchCity');
-    console.log(local);
-  */
+        
             apidata.i = apidata.i + 1;
         })
         .catch((err) => {
