@@ -1,2 +1,2 @@
-# Assignment-5
+# Weather-App
 Made weather app using json and fetch method
